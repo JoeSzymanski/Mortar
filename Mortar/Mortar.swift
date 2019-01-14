@@ -200,6 +200,8 @@ internal enum MortarLayoutAttribute {
         case .right:                    return .left
         case .top:                      return .top
         case .bottom:                   return .top
+        case .leading:                  return .leading
+        case .trailing:                 return .leading
         case .centerX:                  return .left
         case .centerY:                  return .top
         case .centerXWithinMargins:     return .left
@@ -214,6 +216,8 @@ internal enum MortarLayoutAttribute {
         case .right:                    return .left
         case .top:                      return .top
         case .bottom:                   return .top
+        case .leading:                  return .leading
+        case .trailing:                 return .leading
         case .centerX:                  return .left
         case .centerY:                  return .top
         default:                        return .notAnAttribute
