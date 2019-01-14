@@ -172,7 +172,7 @@ public final class _MortarVFLListCapture {
         self.trailingView = trailingView
         
         if let view = trailingView {
-            self.trailingAttr = (axis == .horizontal) ? view.m_right : view.m_bottom
+            self.trailingAttr = (axis == .horizontal) ? view.m_trailing : view.m_bottom
         }
     }
     
