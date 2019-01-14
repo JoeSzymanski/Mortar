@@ -163,7 +163,7 @@ public final class _MortarVFLListCapture {
     
     fileprivate func setLeadingView(_ leadingView: MortarView) {
         self.leadingView = leadingView
-        self.leadingAttr = (axis == .horizontal) ? leadingView.m_left : leadingView.m_top
+        self.leadingAttr = (axis == .horizontal) ? leadingView.m_leading : leadingView.m_top
     }
     
     init(axis: MortarAxis, list: [_MortarVFLNode], trailingView: MortarView?) {
@@ -1012,14 +1012,14 @@ fileprivate extension _MortarVFLListCapture {
 private extension MortarView {
     func vflLeadingAttributeFor(axis: MortarAxis) -> MortarAttribute {
         switch axis {
-        case .horizontal:   return self.m_left
+        case .horizontal:   return self.m_leading
         case .vertical:     return self.m_top
         }
     }
     
     func vflTrailingAttributeFor(axis: MortarAxis) -> MortarAttribute {
         switch axis {
-        case .horizontal:   return self.m_right
+        case .horizontal:   return self.m_trailing
         case .vertical:     return self.m_bottom
         }
     }

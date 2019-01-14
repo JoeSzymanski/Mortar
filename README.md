@@ -158,16 +158,16 @@ And iOS/tvOS spceific attributes:
 
 It also supports composite attributes:
 
-* ```m_sides -- (left, right)```
+* ```m_sides -- (leading, trailing)```
 * ```m_caps -- (top, bottom)```
 * ```m_size -- (width, height)```
 * ```m_center -- (centerX, centerY)```
-* ```m_cornerTL -- (top, left)```
-* ```m_cornerTR -- (top, right)```
-* ```m_cornerBL -- (bottom, left)```
-* ```m_cornerBR -- (bottom, right)```
-* ```m_edges -- (top, left, bottom, right)```
-* ```m_frame -- (top, left, width, height)```
+* ```m_cornerTL -- (top, leading)```
+* ```m_cornerTR -- (top, trailing)```
+* ```m_cornerBL -- (bottom, leading)```
+* ```m_cornerBR -- (bottom, trailing)```
+* ```m_edges -- (top, leading, bottom, trailing)```
+* ```m_frame -- (top, leading, width, height)```
 
 ### Implicit Attributes
 

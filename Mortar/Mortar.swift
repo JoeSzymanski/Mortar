@@ -151,15 +151,15 @@ internal enum MortarLayoutAttribute {
         case .centerYWithinMargins:     return [.centerYWithinMargins                   ]
         case .notAnAttribute:           return [.notAnAttribute                         ]
             
-        case .sides:                    return [.left,    .right                        ]
+        case .sides:                    return [.leading, .trailing                     ]
         case .caps:                     return [.top,     .bottom                       ]
         case .size:                     return [.width,   .height                       ]
-        case .cornerTL:                 return [.top,     .left                         ]
-        case .cornerTR:                 return [.top,     .right                        ]
-        case .cornerBL:                 return [.bottom,  .left                         ]
-        case .cornerBR:                 return [.bottom,  .right                        ]
-        case .edges:                    return [.top,     .left,    .bottom,  .right    ]
-        case .frame:                    return [.left,    .top,     .width,   .height   ]
+        case .cornerTL:                 return [.top,     .leading                      ]
+        case .cornerTR:                 return [.top,     .trailing                     ]
+        case .cornerBL:                 return [.bottom,  .leading                      ]
+        case .cornerBR:                 return [.bottom,  .trailing                     ]
+        case .edges:                    return [.top,     .leading, .bottom,  .trailing ]
+        case .frame:                    return [.leading, .top,     .width,   .height   ]
         case .center:                   return [.centerX, .centerY                      ]            
         }
     }
@@ -179,15 +179,15 @@ internal enum MortarLayoutAttribute {
         case .baseline:                 return [.baseline                               ]
         case .notAnAttribute:           return [.notAnAttribute                         ]
         
-        case .sides:                    return [.left,    .right                        ]
+        case .sides:                    return [.leading, .trailing                     ]
         case .caps:                     return [.top,     .bottom                       ]
         case .size:                     return [.width,   .height                       ]
-        case .cornerTL:                 return [.top,     .left                         ]
-        case .cornerTR:                 return [.top,     .right                        ]
-        case .cornerBL:                 return [.bottom,  .left                         ]
-        case .cornerBR:                 return [.bottom,  .right                        ]
-        case .edges:                    return [.top,     .left,    .bottom,  .right    ]
-        case .frame:                    return [.left,    .top,     .width,   .height   ]
+        case .cornerTL:                 return [.top,     .leading                      ]
+        case .cornerTR:                 return [.top,     .trailing                     ]
+        case .cornerBL:                 return [.bottom,  .leading                      ]
+        case .cornerBR:                 return [.bottom,  .trailing                     ]
+        case .edges:                    return [.top,     .leading, .bottom,  .trailing ]
+        case .frame:                    return [.leading, .top,     .width,   .height   ]
         case .center:                   return [.centerX, .centerY                      ]
         }
     }
@@ -223,7 +223,7 @@ internal enum MortarLayoutAttribute {
     
     func insetConstantModifier() -> CGFloat {
         switch self {
-        case .right:                    return -1
+        case .right, .trailing:         return -1
         case .bottom:                   return -1
         default:                        return 1
         }

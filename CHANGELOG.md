@@ -1,5 +1,9 @@
 # Mortar Changelog
 
+## 1.5.0
+
+* Convert convenience cases and VFL to use leading/trailng instead of left/right
+
 ## 1.4.0.3 -- 4/7/18
 
 * Added Core_NoCreatable and MortarVFL_NoCreatable subspecs
