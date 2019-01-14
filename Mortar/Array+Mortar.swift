@@ -47,14 +47,21 @@ public extension Array where Element: MortarView {
     public var m_centerYWithinMargin:   [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .centerYWithinMargins   }); return z }
     #endif
     public var m_sides:                 [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .sides                  }); return z }
+    public var m_sides_LeTr:            [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .sides_LeTr             }); return z }
     public var m_caps:                  [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .caps                   }); return z }
     public var m_size:                  [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .size                   }); return z }
     public var m_cornerTL:              [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .cornerTL               }); return z }
     public var m_cornerTR:              [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .cornerTR               }); return z }
     public var m_cornerBL:              [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .cornerBL               }); return z }
     public var m_cornerBR:              [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .cornerBR               }); return z }
+    public var m_cornerTLe:             [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .cornerTLe              }); return z }
+    public var m_cornerTTr:             [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .cornerTTr              }); return z }
+    public var m_cornerBLe:             [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .cornerBLe              }); return z }
+    public var m_cornerBTr:             [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .cornerBTr              }); return z }
     public var m_edges:                 [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .edges                  }); return z }
+    public var m_edges_LeTr:            [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .edges_LeTr             }); return z }
     public var m_frame:                 [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .frame                  }); return z }
+    public var m_frame_LeTr:            [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .frame_LeTr             }); return z }
     public var m_center:                [MortarAttribute] { let z = self.map({ $0.m_intoAttribute() }); z.forEach({$0.attribute = .center                 }); return z }
     
 }

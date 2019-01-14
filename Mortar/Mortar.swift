@@ -67,14 +67,21 @@ internal enum MortarLayoutAttribute {
     #endif
     case notAnAttribute
     case sides
+    case sides_LeTr
     case caps
     case size
     case cornerTL
     case cornerTR
     case cornerBL
     case cornerBR
+    case cornerTLe
+    case cornerTTr
+    case cornerBLe
+    case cornerBTr
     case edges
+    case edges_LeTr
     case frame
+    case frame_LeTr
     case center
     
     #if os(iOS) || os(tvOS)
@@ -152,14 +159,21 @@ internal enum MortarLayoutAttribute {
         case .notAnAttribute:           return [.notAnAttribute                         ]
             
         case .sides:                    return [.left,    .right                        ]
+        case .sides_LeTr:               return [.leading, .trailing                     ]
         case .caps:                     return [.top,     .bottom                       ]
         case .size:                     return [.width,   .height                       ]
         case .cornerTL:                 return [.top,     .left                         ]
         case .cornerTR:                 return [.top,     .right                        ]
         case .cornerBL:                 return [.bottom,  .left                         ]
         case .cornerBR:                 return [.bottom,  .right                        ]
+        case .cornerTLe:                return [.top,     .leading                      ]
+        case .cornerTTr:                return [.top,     .trailing                     ]
+        case .cornerBLe:                return [.bottom,  .leading                      ]
+        case .cornerBTr:                return [.bottom,  .trailing                     ]
         case .edges:                    return [.top,     .left,    .bottom,  .right    ]
+        case .edges_LeTr:               return [.top,     .leading, .bottom,  .trailing ]
         case .frame:                    return [.left,    .top,     .width,   .height   ]
+        case .frame_LeTr:               return [.leading, .top,     .width,   .height   ]
         case .center:                   return [.centerX, .centerY                      ]            
         }
     }
@@ -180,14 +194,21 @@ internal enum MortarLayoutAttribute {
         case .notAnAttribute:           return [.notAnAttribute                         ]
         
         case .sides:                    return [.left,    .right                        ]
+        case .sides_LeTr:               return [.laeding, .trailing                     ]
         case .caps:                     return [.top,     .bottom                       ]
         case .size:                     return [.width,   .height                       ]
         case .cornerTL:                 return [.top,     .left                         ]
         case .cornerTR:                 return [.top,     .right                        ]
         case .cornerBL:                 return [.bottom,  .left                         ]
         case .cornerBR:                 return [.bottom,  .right                        ]
+        case .cornerTLe:                return [.top,     .leading                      ]
+        case .cornerTTr:                return [.top,     .trailing                     ]
+        case .cornerBLe:                return [.bottom,  .leading                      ]
+        case .cornerBTr:                return [.bottom,  .trailing                     ]
         case .edges:                    return [.top,     .left,    .bottom,  .right    ]
+        case .edges_LeTr:               return [.top,     .leading, .bottom,  .trailing ]
         case .frame:                    return [.left,    .top,     .width,   .height   ]
+        case .frame_LeTr:               return [.leading, .top,     .width,   .height   ]
         case .center:                   return [.centerX, .centerY                      ]
         }
     }

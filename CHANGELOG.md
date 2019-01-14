@@ -1,5 +1,9 @@
 # Mortar Changelog
 
+## 1.4.0.4
+
+* Added support for setting constraints based on leading/trailing anchors
+
 ## 1.4.0.3 -- 4/7/18
 
 * Added Core_NoCreatable and MortarVFL_NoCreatable subspecs

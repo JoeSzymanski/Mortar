@@ -55,14 +55,21 @@ public extension MortarView {
     public var m_centerYWithinMargin:   MortarAttribute { get { return MortarAttribute(item: self, attribute: .centerYWithinMargins   ) } }
     #endif
     public var m_sides:                 MortarAttribute { get { return MortarAttribute(item: self, attribute: .sides                  ) } }
+    public var m_sides_LeTr:            MortarAttribute { get { return MortarAttribute(item: self, attribute: .sides_LeTr             ) } }
     public var m_caps:                  MortarAttribute { get { return MortarAttribute(item: self, attribute: .caps                   ) } }
     public var m_size:                  MortarAttribute { get { return MortarAttribute(item: self, attribute: .size                   ) } }
     public var m_cornerTL:              MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerTL               ) } }
     public var m_cornerTR:              MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerTR               ) } }
     public var m_cornerBL:              MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerBL               ) } }
     public var m_cornerBR:              MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerBR               ) } }
+    public var m_cornerTLe:             MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerTLe              ) } }
+    public var m_cornerTTr:             MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerTTr              ) } }
+    public var m_cornerBLe:             MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerBLe              ) } }
+    public var m_cornerBTr:             MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerBTr              ) } }
     public var m_edges:                 MortarAttribute { get { return MortarAttribute(item: self, attribute: .edges                  ) } }
+    public var m_edges_LeTr:            MortarAttribute { get { return MortarAttribute(item: self, attribute: .edges_LeTr             ) } }
     public var m_frame:                 MortarAttribute { get { return MortarAttribute(item: self, attribute: .frame                  ) } }
+    public var m_frame_LeTr:            MortarAttribute { get { return MortarAttribute(item: self, attribute: .frame_LeTr             ) } }
     public var m_center:                MortarAttribute { get { return MortarAttribute(item: self, attribute: .center                 ) } }
     
     // -------- Compression Resistance --------
@@ -150,6 +157,7 @@ public extension UIViewController {
         public var m_centerYWithinMargin:   MortarAttribute { get { return MortarAttribute(item: self, attribute: .centerYWithinMargins   ) } }
         #endif
         public var m_sides:                 MortarAttribute { get { return MortarAttribute(item: self, attribute: .sides                  ) } }
+        public var m_sides_LeTr:            MortarAttribute { get { return MortarAttribute(item: self, attribute: .sides_LeTr             ) } }
         public var m_caps:                  MortarAttribute { get { return MortarAttribute(item: self, attribute: .caps                   ) } }
         public var m_size:                  MortarAttribute { get { return MortarAttribute(item: self, attribute: .size                   ) } }
         public var m_cornerTL:              MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerTL               ) } }
@@ -157,7 +165,9 @@ public extension UIViewController {
         public var m_cornerBL:              MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerBL               ) } }
         public var m_cornerBR:              MortarAttribute { get { return MortarAttribute(item: self, attribute: .cornerBR               ) } }
         public var m_edges:                 MortarAttribute { get { return MortarAttribute(item: self, attribute: .edges                  ) } }
+        public var m_edges_LeTr:            MortarAttribute { get { return MortarAttribute(item: self, attribute: .edges_LeTr             ) } }
         public var m_frame:                 MortarAttribute { get { return MortarAttribute(item: self, attribute: .frame                  ) } }
+        public var m_frame_LeTr:            MortarAttribute { get { return MortarAttribute(item: self, attribute: .frame_LeTr             ) } }
         public var m_center:                MortarAttribute { get { return MortarAttribute(item: self, attribute: .center                 ) } }
     }
 #endif
